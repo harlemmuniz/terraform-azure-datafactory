@@ -1,0 +1,21 @@
+{
+	"name": "billing",
+	"properties": {
+		"annotations": [],
+		"type": "PostgreSql",
+		"typeProperties": {
+			"connectionString": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "keyvault",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "billing-connection-string"
+			}
+		},
+		"connectVia": {
+			"referenceName": "integrationRuntime-DCDF",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}
