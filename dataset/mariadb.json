@@ -1,0 +1,29 @@
+{
+	"name": "mariadb",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "mariadb",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"schema": {
+				"type": "string"
+			},
+			"table_name": {
+				"type": "string"
+			}
+		},
+		"folder": {
+			"name": "unit_catalog/mariadb"
+		},
+		"annotations": [],
+		"type": "MariaDBTable",
+		"schema": [],
+		"typeProperties": {
+			"tableName": {
+				"value": "@{dataset().schema}.@{dataset().table_name}",
+				"type": "Expression"
+			}
+		}
+	}
+}

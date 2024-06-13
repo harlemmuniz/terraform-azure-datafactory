@@ -1,0 +1,6 @@
+{
+	"name": "integrationRuntime-DCDF-v2",
+	"properties": {
+		"type": "SelfHosted"
+	}
+}

@@ -1,0 +1,12 @@
+{
+	"name": "integrationRuntime-DCDF",
+	"properties": {
+		"type": "SelfHosted",
+		"typeProperties": {
+			"linkedInfo": {
+				"resourceId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourcegroups/RG-NAME/providers/Microsoft.DataFactory/factories/adf-name-lab/integrationruntimes/integrationRuntime-DCDF",
+				"authorizationType": "Rbac"
+			}
+		}
+	}
+}

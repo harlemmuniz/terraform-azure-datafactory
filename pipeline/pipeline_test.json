@@ -1,0 +1,35 @@
+{
+    "name": "pipeline_test",
+    "properties":
+    {
+        "description": "pipeline description",
+        "activities": [
+         {
+            "name": "MyFirstActivity",
+            "type": "Copy",
+            "typeProperties": {
+            },
+            "linkedServiceName": {
+            }
+        },
+        {
+            "name": "MySecondActivity",
+            "type": "Copy",
+            "typeProperties": {
+            },
+            "linkedServiceName": {
+            },
+            "dependsOn": [
+            {
+                "activity": "MyFirstActivity",
+                "dependencyConditions": [
+                    "Succeeded"
+                ]
+            }
+          ]
+        }
+      ],
+      "parameters": {
+       }
+    }
+}

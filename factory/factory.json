@@ -1,0 +1,32 @@
+{
+	"name": "adf-psim-lab",
+	"properties": {
+		"globalParameters": {
+			"databricks_directory": {
+				"type": "string",
+				"value": "/Repos/<<ROOT_FOLDER>>/notebooks"
+			},
+			"root_folder": {
+				"type": "string",
+				"value": "Workspace"
+			},
+			"databricks_url": {
+				"type": "string",
+				"value": "https://adb-databricks-id.azuredatabricks.net/"
+			},
+			"arm_client_id": {
+				"type": "string",
+				"value": "00000000-0000-0000-0000-000000000000"
+			},
+			"databricks_resource_id": {
+				"type": "string",
+				"value": "00000000-0000-0000-0000-000000000000"
+			},
+			"keyvault_url": {
+				"type": "string",
+				"value": "https://keyvault-url.vault.azure.net/"
+			}
+		}
+	},
+	"location": "brazilsouth"
+}
